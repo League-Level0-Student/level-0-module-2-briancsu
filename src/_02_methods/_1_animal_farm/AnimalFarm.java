@@ -4,6 +4,7 @@
 package _02_methods._1_animal_farm;
 
 import java.io.File;
+
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.swing.ImageIcon;
@@ -28,9 +29,27 @@ public class AnimalFarm {
 		/* 1. Ask the user which animal they want, then see and hear 
 		 *    the animal they chose using one of the methods below.
 		*/			 
-			
+		boolean hi = true;
+		while(hi) {
+			String n = JOptionPane.showInputDialog(null, "Which animal: Cow. Duck, Dog, Cat or Llama: (NO CAPS)");
+				if (n.equals("cow")) {
+					moo();
+				}
+				if (n.equals("duck")) {
+					quack();
+				}
+				if (n.equals("dog")) {
+					woof();
+				}
+				if (n.equals("cat")) {
+					meow();
+				}
+				if (n.equals("llama")) {
+					llamaScream();
+				}
+			}
 		/* 2. Make it so that the user can keep entering new animals. */
-
+			
 	}
 
 	void moo() {
